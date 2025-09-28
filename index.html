@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PERSONAL PROFILE PAGE</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <header> 
-    <!--(Add headings, paragraphs{a short bio}, lists{my skills}, images, and a table{progress table})-->
 
-        <h1 style="color: rgb(15, 2, 90);">MY PROFILE PAGE</h1>
+<body>
+    <header>
+        <!--(Add headings, paragraphs{a short bio}, lists{my skills}, images, and a table{progress table})-->
+
+        <h1>MY PROFILE PAGE</h1>
     </header>
 
     <main>
-        <section>
-            <h2><text style=color:blueviolet><u><b>My Bio</b></u></text></h2>
+        <section class="bio-box">
+            <h2 class="section-title">My Bio</h2>
             <p>Hello! My name is Rehema Muchai, and I am a Computer Science Student. </p>
             <p>I have a passion for Web Development and UX/UI Designing.</p>
-            <p>During my free time, I enjoy watching movies, readng novels and book writting.</p>
+            <p>During my free time, I enjoy watching movies, reading novels and book writing.</p>
         </section>
 
-        <section>
-            <b><h2 style="color: blueviolet;"><u>Skills</u></h2></b>
-            <ul type="empty circle">
+        <section class="skills-box">
+            <h2 class="section-title">My Skills</h2>
+            <ul class="skills-list">
                 <li>Creative Thinking</li>
                 <li>Social Media Manager</li>
                 <li>Web Developer</li>
@@ -32,47 +35,52 @@
         </section>
 
         <section>
-            <b><h2 style="color: blueviolet;"><u>Progress Table</u></h2></b>
-            <table border="1">
-            <colspan="2"><b style="color: black;">My Current Projects</b></colspan>
-                <tr>
-                    <th><b><a style="color:rgb(109, 3, 109)">Project</a></b></th>
-                    <th><b><a style="color:rgb(109, 3, 109)">Status</a></b></th>
-                </tr>
-                <tr>
-                    <td>Fullstack Development</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>Korean Learning</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>School Project</td>
-                    <td>In Progress</td>
-                </tr>
+            <h2 class="title">Progress Table</h2>
+            <table class="progress-table">
+                <caption class="table-caption">My Current Projects</caption>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fullstack Development</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Korean Learning</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>School Project</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
-        <section>
-            <b><h2 style="color: blueviolet;"><u>My Image</u></h2></b>
+        <section class="image-box">
+            <h2 class="section-title">My Image</h2>
             <img src="images/Attachments/linkedIn.jpg" alt="My Image" style="width:300px; height:auto;">
-        </section>  
-        
-        <section>
+        </section>
+
+        <section class="audio-box">
             <!-- Basic audio player -->
-            <b><h2 style="color: blueviolet;"><u>My Favorite Song</u></h2></b>
+            <h2 class="section-title">My Favorite Song</h2>
             <audio controls>
-            <source src="audio\GoodThing.mp3" type="audio/mpeg">
-            <p>Your browser doesn't support audio. <a href="podcast.mp3">Download the audio file</a>.</p>
+                <source src="audio\GoodThing.mp3" type="audio/mpeg">
+                Your browser doesn't support audio. <a href="podcast.mp3">Download the audio file</a>
             </audio>
         </section>
     </main>
     <br>
     <footer>
         <a href="contact.html"><b><u>Click here to access my Contact Page...</u></b></a>
-        <p style="color: blue;" >&copy; 2025 My Personal Profile Page. All rights reserved.</p>
+        <p style="color: blue;">&copy; 2025 My Personal Profile Page. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>
