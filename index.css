@@ -81,8 +81,10 @@ footer {
     color: #333;
     font-family: 'Arial Black', sans-serif;
     font-size: 1.0em;
-    margin: 20px auto; /* Centers the table horizontally */
-    width: 80%; /* Optional: controls table width */
+    margin: 20px auto;
+    /* Centers the table horizontally */
+    width: 80%;
+    /* Optional: controls table width */
     border-collapse: collapse;
 }
 
@@ -147,4 +149,75 @@ audio {
     font-size: 2em;
     margin-bottom: 20px;
     text-decoration: underline;
+}
+
+/*Responsive tweaks for screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    header,
+    footer {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    h1,
+    .section-title,
+    .title {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .bio-box,
+    .skills-box,
+    .audio-box,
+    .image-box {
+        max-width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-list {
+        padding-left: 15px;
+        font-size: 0.95em;
+    }
+
+    .progress-table {
+        font-size: 0.9em;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .progress-table th,
+    .progress-table td {
+        padding: 6px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    audio {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer a {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
