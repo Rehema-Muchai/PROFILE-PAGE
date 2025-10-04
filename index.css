@@ -1,0 +1,223 @@
+body {
+    background-color: #da88da;
+}
+
+header {
+    background-color: #f8f9fa98;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+footer {
+    background-color: #c40dc4;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #76065c;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+.bio-box {
+    background-color: #e681cf;
+    border: 2px solid #6d036d;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio-box:hover {
+    background-color: #d347d3;
+    transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.section-title {
+    color: #333;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.skills-box {
+    background-color: #e681cf;
+    border: 2px solid #6d036d;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-box:hover {
+    background-color: #d347d3;
+    transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.skills-list {
+    list-style-type: circle;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.table-caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.progress-table {
+    color: #333;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.0em;
+    margin: 20px auto;
+    /* Centers the table horizontally */
+    width: 80%;
+    /* Optional: controls table width */
+    border-collapse: collapse;
+}
+
+.progress-table th,
+.progress-table td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.progress-table th {
+    background-color: #cc24cc;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-table tr:nth-child(even) {
+    background-color: #e3a5cb;
+}
+
+.progress-table tr:nth-child(odd) {
+    background-color: #e3a5cb;
+}
+
+.audio-box {
+    background-color: #e681cf;
+    border: 2px solid #6d036d;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.audio-box:hover {
+    background-color: #d347d3;
+    transform: rotate3d(0, 2, 0, 20deg);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.image-box {
+    background-color: #e681cf;
+    border: 2px solid #6d036d;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/*Responsive tweaks for screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    header,
+    footer {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    h1,
+    .section-title,
+    .title {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .bio-box,
+    .skills-box,
+    .audio-box,
+    .image-box {
+        max-width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-list {
+        padding-left: 15px;
+        font-size: 0.95em;
+    }
+
+    .progress-table {
+        font-size: 0.9em;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .progress-table th,
+    .progress-table td {
+        padding: 6px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    audio {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
